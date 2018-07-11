@@ -10,9 +10,9 @@
 }
 
 .parallax-middle {
-  /* background-image: url(""); */
+  background-image: url("/assets/redd-angelo-249352-unsplash.jpg");
   /* Set a specific height */
-  height: 300px;
+  height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -20,7 +20,7 @@
   background-size: cover;
 }
 .parallax-bot{
-  /* background-image: url(""); */
+  background-image: url("/assets/timothy-ries-195501-unsplash.jpg");
   /* Set a specific height */
   height: 400px;
   /* Create the parallax scrolling effect */
