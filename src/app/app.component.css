@@ -1,0 +1,109 @@
+.parallax {
+  background-image: url("/assets/timothy-ries-195501-unsplash.jpg");
+  /* Set a specific height */
+  height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-middle {
+  /* background-image: url(""); */
+  /* Set a specific height */
+  height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-bot{
+  /* background-image: url(""); */
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-fluid {
+  background-image: url("/assets/jake-weirick-624557-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.transparentCover {
+  background-color: #ffffff71;
+  width: 630px;
+  position: absolute;
+  top: 90px;
+  left: 100pt;
+}
+.text-pink{
+    color: rgb(235, 148, 178);
+}
+
+.fontTitle {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+}
+
+.webTitle {
+  font-family: 'Dosis', sans-serif;
+  font-size: 3.5em;
+}
+.header {
+  font-family: 'Dosis', sans-serif;
+  font-size: 3em;
+}
+
+.fontBody {
+  font-family: 'Antic Slab', serif;
+  font-size: 1.1em;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets/jake-weirick-624557-unsplash.jpg");
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aboutMeBox {
+  background-color: rgba(245, 245, 245, 0.603);
+}
+
+.profilePic {
+  width: 325px;
+  height: 325px;
+}
+
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  border: solid rgba(#1b56b9, 0.74);
+  background-color: #9dc6f2;
+  border-radius: 2px;
+}
+
+.footer-icon {
+  padding: 2px 10px;
+}
