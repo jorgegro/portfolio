@@ -1,3 +1,6 @@
+
+/* parallaxes settings */
+
 .parallax {
   background-image: url("/assets/timothy-ries-195501-unsplash.jpg");
   /* Set a specific height */
@@ -10,9 +13,9 @@
 }
 
 .parallax-middle {
-  background-image: url("/assets/redd-angelo-249352-unsplash.jpg");
+  background-image: url("/assets/jj-ying-230105-unsplash.jpg");
   /* Set a specific height */
-  height: 400px;
+  height: 600px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -30,26 +33,34 @@
   background-size: cover;
 }
 
+/* parallaxes */
+
+/* Jumbotron settings */
 .jumbotron-fluid {
   background-image: url("/assets/jake-weirick-624557-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .transparentCover {
   background-color: #ffffff71;
-  width: 630px;
+  width: 60%;
   position: absolute;
-  top: 90px;
-  left: 100pt;
+  top: 10%;
+  left: 20%;
 }
+/* Jumbotron settings */
 .text-pink{
-    color: rgb(235, 148, 178);
+    color: #eb94b2;
 }
 
 .fontTitle {
   font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+}
+.fontTech {
+  font-family: 'Antic Slab', serfi;
   font-size: 2em;
 }
 
@@ -99,11 +110,27 @@
   bottom: 0;
   width: 100%;
   text-align: left;
-  border: solid rgba(#1b56b9, 0.74);
-  background-color: #9dc6f2;
-  border-radius: 2px;
+  border-top: .25ex solid black;
+  background-color: #88cdffce;
 }
 
 .footer-icon {
   padding: 2px 10px;
+}
+
+nav > a {
+  color: black;
+}
+
+nav > a:hover{
+  color: #eb94b2;
+}
+
+div > a {
+  color: black;
+}
+
+div > a:hover{
+  color: #eb94b2;
+  text-decoration: underline;
 }
