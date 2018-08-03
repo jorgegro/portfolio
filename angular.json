@@ -80,7 +80,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "../node_modules/wowjs/dist/wow.js",
+              "../node_modules/animate.css/animate.css",
+              "../node_modules/scrollreveal/dist/scrollreveal.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -129,5 +133,10 @@
       }
     }
   },
-  "defaultProject": "appName"
+  "defaultProject": "appName",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "styl"
+    }
+  }
 }

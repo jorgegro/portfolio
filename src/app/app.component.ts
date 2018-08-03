@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WOW } from 'wowjs/dist/wow.min';
+// import { AngularWaitBarrier } from '../../node_modules/blocking-proxy/built/lib/angular_wait_barrier';
 
 
 
@@ -8,9 +8,11 @@ import { WOW } from 'wowjs/dist/wow.min';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+
 export class AppComponent {
-  title = 'app';
-  
+  title = 'app'; 
+
   
   educationInfo =[
     {
@@ -25,5 +27,10 @@ export class AppComponent {
       title: "Computer Engineer at UTRGV",
       description: "My interest in computer and coding goes far beyond web developement. I want to create, build and implement my own ideas. Innovate the world in my own way. As a sophomore looking to finish and complete my arsenal for my dreams."
     }
-  ]
+  ];
+
+  techSkills = ["Angular", "HTML5", "Express", "CSS3", "Bootstrap 4", "SQL", "Wordpress", "RESTful APIs", "C++", "Javascript", "Sass",
+];
+
+
 }
