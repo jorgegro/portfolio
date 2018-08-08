@@ -1,10 +1,10 @@
 
 /* parallaxes settings */
-
 .parallax {
-  background-image: url("/assets/timothy-ries-195501-unsplash.jpg");
+  /* The image used */
+  background-image: url("/assets/pablo-gentile-587380-unsplash.jpg");
   /* Set a specific height */
-  height: 500px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -13,9 +13,9 @@
 }
 
 .parallax-middle {
-  background-image: url("/assets/jj-ying-230105-unsplash.jpg");
+  background-image: url("/assets/benjamin-hung-340384-unsplash.jpg");
   /* Set a specific height */
-  height: 600px;
+  height: 70vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -23,25 +23,17 @@
   background-size: cover;
 }
 .parallax-bot{
-  background-image: url("/assets/timothy-ries-195501-unsplash.jpg");
+  background-image: url("/assets/clem-onojeghuo-486844-unsplash_Fotor.jpg");
   /* Set a specific height */
-  height: 400px;
+  height: 80vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position-y: 20%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* parallaxes */
-
-/* Jumbotron settings */
-.jumbotron-fluid {
-  background-image: url("/assets/jake-weirick-624557-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
 
 .transparentCover {
   background-color: #ffffff71;
@@ -78,30 +70,19 @@
   font-size: 1.1em;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("/assets/jake-weirick-624557-unsplash.jpg");
-  /* Set a specific height */
-  height: 100vh;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .section-padding {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .aboutMeBox {
+  margin-top: 3%;
   background-color: rgba(245, 245, 245, 0.603);
 }
 
 .profilePic {
-  width: 325px;
-  height: 325px;
+  width: 340px;
+  height: 340px;
 }
 
 .footer {

@@ -1,40 +1,19 @@
-<nav id="navbar" class="sticky navbar navbar-expand-lg" style="background-color: #88cdffce">
-  <a class="navbar-brand fontTitle" href="#">Jorge Guerrero</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="px-5 collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#about">About</a>
-      <a class="nav-item nav-link" href="#resume">Resume</a>
-      <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-    </div>
-  </div>
-</nav>
-<section class="container-fluid" style="background-color: #a7cbf1;">
+<section class="container-fluid p-0" style="background-color: #a7cbf1;">
   <!-- Heading parallax and quote -->
   <div class="row">
     <div class="col p-0 col-lg-12 col-md-6 col-sm-2">
       <div class="parallax">
-        <div  class="">
-          <div [ngsReveal]="{scale: 1, viewFactor: .5, origin: 'bottom' , reset: false, distance: '50%', duration: 1000, delay: 300}" class="item transparentCover px-3 py-2">
-            <h1 class="display-5 fontTitle">Building, Designing & Implementing</h1>
-            <p class="lead fontBody">Starting a website it's like planting a seed. With good care and dedication it could grow into a beautiful and
-              profitable tree.</p>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <!-- About me section -->
   <div id="about" class="row section-padding fontBody">
-    <div class="col-lg-4 text-center">
+    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'left', duration: 1000, delay: 300, distance: '50%', opacity: 0}"   class="col-lg-4 text-center">
       <img src="./assets/me.jpg" class="profilePic pb-4 rounded-circle">
     </div>
-    <div class="col-lg-7">
+    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'right', duration: 1000, delay: 300, distance: '50%', opacity: 0}"  class="col-lg-7">
       <div class="aboutMeBox p-2">
-        <h3 class="fontTitle">Little about me...</h3>
+        <h3 class="fontTitle">Hi I am Jorge Guerrero</h3>
         <div class="fontBody">
           <p>19th year-old young leader. Foreign film enthusiast. Music and video games are part of my life. Studying to become
             a proud full stacked web developer. </p>
@@ -46,32 +25,24 @@
     </div>
   </div>
   <!-- Middle parallax -->
-  <div class="row">
-    <div class="col p-0">
-      <div class="parallax-middle">
-        <div class="container">
-          <div class="transparentCover"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="parallax-middle"></div>
   <!-- Resume section -->
   <div id="resume" class="row py-3 pl-5">
     <div class="col-lg-6 col-md-12">
-      <h2 [ngsReveal]="{reset: false, duration: 400, delay: 300}" class="pt-4 pb-3 m-0 header">Education (So far)</h2>
-      <div [ngsReveal]="{origin: 'left', reset: false, duration: 400, delay: 300}" class="my-3" *ngFor="let education of this.educationInfo">
+      <h2 [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300, distance: '20%', opacity: 0}" class="pt-4 pb-3 m-0 header">Education (So far)</h2>
+      <div [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300, distance: '50%'}" class="my-3" *ngFor="let education of this.educationInfo">
         <h5 [ngsRevealSet]="{ reset:true, duration: 1000, delay: 300}" [ngsSelector]="'.item'" class="itemset fontTitle text-pink">{{education.title}}</h5>
         <p>{{education.description}}</p>
       </div>
     </div>
     <div class="col">
       <div class="row py-4">
-        <div class="col">
+        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, distance: '20%', opacity: 0}"  class="col">
           <span class="header">Tech Skills</span>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6" *ngFor="let skill of techSkills">
+        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, distance: '20%', opacity: 0}" class="col-lg-6" *ngFor="let skill of techSkills">
           <ul class="fontTech">
             <li>
               {{skill}}
@@ -82,15 +53,7 @@
     </div>
   </div>
   <!-- Bottom parallax -->
-  <div class="row">
-    <div class="col p-0">
-      <div class="parallax-bot">
-        <div class="container">
-          <div class="transparentCover"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="parallax-bot"></div>
   <!-- Start of portfolio -->
   <div  id="portfolio" class="row">
     <div class="col">
