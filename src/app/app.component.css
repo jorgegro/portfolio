@@ -1,4 +1,21 @@
+section{
+  letter-spacing: 175%;
+}
 
+.padx{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.next{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #ffffff;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+}
 /* parallaxes settings */
 .parallax {
   /* The image used */
@@ -15,7 +32,7 @@
 .parallax-middle {
   background-image: url("/assets/benjamin-hung-340384-unsplash.jpg");
   /* Set a specific height */
-  height: 70vh;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -25,7 +42,7 @@
 .parallax-bot{
   background-image: url("/assets/clem-onojeghuo-486844-unsplash_Fotor.jpg");
   /* Set a specific height */
-  height: 80vh;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position-y: 20%;
@@ -33,27 +50,21 @@
   background-size: cover;
 }
 
-/* parallaxes */
-
-.transparentCover {
-  background-color: #ffffff71;
-  width: 60%;
-  position: absolute;
-  top: 10%;
-  left: 20%;
-}
 /* Jumbotron settings */
 .text-pink{
-    color: #eb94b2;
+    color: rgb(97, 146, 187);
 }
 
 .fontTitle {
   font-family: 'Dosis', sans-serif;
-  font-size: 2em;
+  font-size: 2.3em;
+  color: rgb(59, 107, 146);
+  
 }
 .fontTech {
   font-family: 'Antic Slab', serfi;
   font-size: 2em;
+  
 }
 
 .webTitle {
@@ -63,6 +74,7 @@
 .header {
   font-family: 'Dosis', sans-serif;
   font-size: 3em;
+  color: #25435C;
 }
 
 .fontBody {
@@ -82,7 +94,7 @@
 
 .profilePic {
   width: 340px;
-  height: 340px;
+  height: 400px;
 }
 
 .footer {
@@ -92,11 +104,16 @@
   width: 100%;
   text-align: left;
   border-top: .25ex solid black;
-  background-color: #88cdffce;
+  background-color: #4E81AB;
 }
 
 .footer-icon {
   padding: 2px 10px;
+}
+
+.projectFont{
+  font-family: 'Antic Slab', serif;
+  font-size: 1.3em;
 }
 
 nav > a {

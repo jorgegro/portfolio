@@ -1,19 +1,20 @@
-<section class="container-fluid p-0" style="background-color: #a7cbf1;">
+<section class="container-fluid p-0" style="background-color: #97C8F0;">
   <!-- Heading parallax and quote -->
   <div class="row">
     <div class="col p-0 col-lg-12 col-md-6 col-sm-2">
       <div class="parallax">
+        <i class="next fas fa-3x fa-caret-down animated bounce infinite"></i>
       </div>
     </div>
   </div>
   <!-- About me section -->
   <div id="about" class="row section-padding fontBody">
-    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'left', duration: 1000, delay: 300, distance: '50%', opacity: 0}"   class="col-lg-4 text-center">
+    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'left', duration: 1000, delay: 300, opacity: 0}"   class="col-lg-4 text-center">
       <img src="./assets/me.jpg" class="profilePic pb-4 rounded-circle">
     </div>
-    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'right', duration: 1000, delay: 300, distance: '50%', opacity: 0}"  class="col-lg-7">
+    <div [ngsReveal]="{scale: 1, viewFactor: .5, reset: true, origin: 'right', duration: 1000, delay: 300, opacity: 0}"  class="col-lg-7">
       <div class="aboutMeBox p-2">
-        <h3 class="fontTitle">Hi I am Jorge Guerrero</h3>
+        <h3 class="fontTitle pb-4">Hi I am Jorge Guerrero</h3>
         <div class="fontBody">
           <p>19th year-old young leader. Foreign film enthusiast. Music and video games are part of my life. Studying to become
             a proud full stacked web developer. </p>
@@ -29,20 +30,20 @@
   <!-- Resume section -->
   <div id="resume" class="row py-3 pl-5">
     <div class="col-lg-6 col-md-12">
-      <h2 [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300, distance: '20%', opacity: 0}" class="pt-4 pb-3 m-0 header">Education (So far)</h2>
-      <div [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300, distance: '50%'}" class="my-3" *ngFor="let education of this.educationInfo">
-        <h5 [ngsRevealSet]="{ reset:true, duration: 1000, delay: 300}" [ngsSelector]="'.item'" class="itemset fontTitle text-pink">{{education.title}}</h5>
+      <h2 [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300, opacity: 0}" class="pt-4 pb-3 m-0 header">Education (So far)</h2>
+      <div [ngsReveal]="{origin: 'left', reset: true, duration: 400, delay: 300}" class="my-3" *ngFor="let education of this.educationInfo">
+        <h5 [ngsRevealSet]="{reset: true, duration: 1000, delay: 300}" [ngsSelector]="'.item'" class="itemset fontTitle text-pink">{{education.title}}</h5>
         <p>{{education.description}}</p>
       </div>
     </div>
     <div class="col">
       <div class="row py-4">
-        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, distance: '20%', opacity: 0}"  class="col">
+        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, opacity: 0}"  class="col">
           <span class="header">Tech Skills</span>
         </div>
       </div>
       <div class="row">
-        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, distance: '20%', opacity: 0}" class="col-lg-6" *ngFor="let skill of techSkills">
+        <div [ngsReveal]="{origin: 'right', reset: true, duration: 700, delay: 300, opacity: 0}" class="col-lg-6" *ngFor="let skill of techSkills">
           <ul class="fontTech">
             <li>
               {{skill}}
@@ -56,58 +57,48 @@
   <div class="parallax-bot"></div>
   <!-- Start of portfolio -->
   <div  id="portfolio" class="row">
-    <div class="col">
+    <div [ngsReveal]="{origin: 'bottom', reset: true, duration: 700, delay: 300, opacity: 0}" class="col">
       <h2 class="header pt-4 pb-3 text-center">Work Experience</h2>
     </div>
   </div>
-  <div class="row my-4">
-    <div class="col-lg-6 col-md-12">
-      <h5 class="fontTitle text-pink">To Do App</h5>
-      <p>Developed in Angular 2. In this ToDo App has basic CRUD(create, read, update, delete) functions. With the help of bootstrap,
-        googleFonts and fontAwesome libraries. Check it out
-        <a href="https://github.com/jorgegro/todoApp">here</a>.</p>
-      <img src="./assets/ToDoApp.png" width="100%" height="60%">
-    </div>
-    <div class="col">
-      <div [ngsReveal]="{orgin: 'left', duration: 1000, delay: 300}"  class="item">
-        <h5 class="fontTitle text-pink">ID generator</h5>
-        <p>Developed with raw HTML, CSS and JavaScript. With this ID generator you can fill up a form that uses that information
-          to populate an web id.
-          <a href="https://jorgegro.github.io/idcardapp/">demo</a>
-        </p>
-        <div class="text-centerpb-4 pt-2">
-          <img src="./assets/IdGenerator.png" alt="https://jorgegro.github.io/idcardapp/" class="border border-secondary" width="100%"
-            height="60%">
-        </div>
+  <div class="contianer">
+    <div class="row my-4" >
+      <div [ngsReveal]="{origin: 'top', reset: true, duration: 700, delay: 300, opacity: 0}" *ngFor="let project of projects" class="col-lg-12 padx" >
+        <h5 class="py-3 fontTitle text-pink text-center">{{project.title}}</h5>
+        <p class="projectFont"> {{project.description}} <a href="project.link">Demo</a></p>
+        <img class="border border-dark my-5 text-center rounded" width="100%" src=" {{project.pic}}" alt="project">
       </div>
     </div>
   </div>
   <div class="row fontBody">
     <div class="col px-0">
-      <div class="footer text-center py-2">
+      <div class="footer text-center py-2 text-light">
         <div>Jorge Guerrero</div>
         <div>
           <i class="far fa-envelope"></i> jorgegro1999@gmail.com</div>
         <a class="footer-icon" href="https://www.facebook.com/jorge.a.guerrerobarragan">
-          <i class="i fab fa-facebook-square text-muted"></i>
+          <i class="i fab fa-facebook-square text-light"></i>
         </a>
         <a class="footer-icon" href="https://twitter.com/jorge_gro14">
-          <i class="i fab fa-twitter text-muted"></i>
+          <i class="i fab fa-twitter text-light"></i>
         </a>
         <a class="footer-icon" href="https://github.com/jorgegro">
-          <i class="i fab fa-github text-muted"></i>
+          <i class="i fab fa-github text-light"></i>
         </a>
         <a class="footer-icon" href="https://www.linkedin.com/in/jorge-guerrero-222334167/">
-          <i class="i fab fa-linkedin text-muted"></i>
+          <i class="i fab fa-linkedin text-light"></i>
         </a>
         <a class="footer-icon" href="https://www.instagram.com/jorgi_gro/">
-          <i class="i fab fa-instagram text-muted"></i>
+          <i class="i fab fa-instagram text-light"></i>
         </a>
         <a class="footer-icon" href="https://plus.google.com/u/0/112360755530858705087">
-          <i class="i fab fa-google-plus-square text-muted"></i>
+          <i class="i fab fa-google-plus-square text-light"></i>
         </a>
       </div>
     </div>
+    <!-- <div class="footer col-lg-6 col-md-12">
+
+    </div> -->
   </div>
 
 </section>
