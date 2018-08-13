@@ -66,7 +66,7 @@
       <div [ngsReveal]="{origin: 'top', reset: true, duration: 700, delay: 300, opacity: 0}" *ngFor="let project of projects" class="col-lg-12 padx" >
         <h5 class="py-3 fontTitle text-pink text-center">{{project.title}}</h5>
         <p class="projectFont"> {{project.description}} <a href="project.link">Demo</a></p>
-        <img class="border border-dark my-5 text-center rounded" width="100%" src=" {{project.pic}}" alt="project">
+        <img class="border border-dark my-5 text-center rounded" width="100%" src=".{{project.pic}}" alt="project">
       </div>
     </div>
   </div>
