@@ -63,10 +63,10 @@
   </div>
   <div class="contianer">
     <div class="row my-4" >
-      <div  *ngFor="let project of projects" class="col-lg-12 padx" >
-        <h5 ngsReveal class="item fontTitle">{{project.title}}</h5>
-        <p class="item projectFont"> {{project.description}} <a href="project.link">Demo</a></p>
-        <img class="item border border-dark my-5 text-center rounded" width="100%" src=".{{project.pic}}" alt="project">
+      <div  *ngFor="let project of projects;let i = index" [ngsRevealSet]="{ reset:true}" [ngsSelector]="'.item'" class="col-lg-12 padx itemset" >
+        <h5 class="item itemi fontTitle">{{project.title }}</h5>
+        <p class="item itemi projectFont"> {{project.description}} <a href="project.link">Demo</a></p>
+        <img class="item itemi border border-dark my-5 text-center rounded" width="100%" src=".{{project.pic}}" alt="project">
       </div>
     </div>
   </div>
